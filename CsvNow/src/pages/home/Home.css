@@ -1,0 +1,29 @@
+#root {
+  margin: 0 auto;
+
+}
+
+.mainGrid {
+  margin-top: 13%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  height: auto;
+
+
+}
+
+.divCards {
+  margin-top: 2%;
+  background-color: aqua;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+}
