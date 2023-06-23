@@ -1,9 +1,9 @@
 var { getUserById } = require("../Services/UsersService");
 var { file } = require("../data/database");
+const { default: FileSchema } = require("../models/fileModel");
 
 function saveFile(datas) {
-
-
+  debugger;
   if (datas == null) {
     return null;
   }

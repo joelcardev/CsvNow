@@ -32,11 +32,12 @@ module.exports = {
 
       return res.status(200).send(fileSave);
     } catch (error) {
-      return res.json(error);
+      return res.status(400).json(error);
     }
   },
   async getUserById(req, res) {
     try {
+   
       const userId = req.query.idUser;
 
       if (!userId) {

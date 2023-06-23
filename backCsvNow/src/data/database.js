@@ -1,9 +1,4 @@
 let file = [
-  {
-    id: 1,
-    idUser: 1,
-    data: [],
-  },
 ];
 
 let users = [

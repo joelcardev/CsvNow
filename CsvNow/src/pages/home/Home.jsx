@@ -34,14 +34,15 @@ function Home() {
   }, [keyWord]);
 
   function setValuesCameApi(result) {
-    let newFiles = result.filter((data) => data.id !== 1);
-    setFilesJson((prevFiles) => [...prevFiles, ...newFiles]);
-  }
+    debugger;
 
+    setFilesJson((prevFiles) => [...prevFiles, ...result]);
+  }
 
   // I TRY BUT NOT HAD TIME TO LOOK FOR WHY MY API IS CALLING 2 TIMES, its life.
   async function getApiFilesByUser() {
     // I SET value just test, because not do system of auth to many users
+
     let idUser = 1;
     await getData(
       `/files/?idUser=${idUser}`,
@@ -97,7 +98,7 @@ function Home() {
   async function searchFiles() {
     if (!keyWord) {
       setFilesJson([]);
-      getApiFilesByUser();
+
       showInfo("No files found");
       return;
     }
@@ -123,7 +124,7 @@ function Home() {
         return;
       }
       setFilesJson([]);
-      getApiFilesByUser();
+
       showInfo("No files found");
     }
   }
