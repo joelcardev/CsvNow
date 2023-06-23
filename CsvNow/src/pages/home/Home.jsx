@@ -34,8 +34,6 @@ function Home() {
   }, [keyWord]);
 
   function setValuesCameApi(result) {
-    debugger;
-
     setFilesJson((prevFiles) => [...prevFiles, ...result]);
   }
 
@@ -98,7 +96,7 @@ function Home() {
   async function searchFiles() {
     if (!keyWord) {
       setFilesJson([]);
-
+      getApiFilesByUser();
       showInfo("No files found");
       return;
     }
@@ -124,7 +122,7 @@ function Home() {
         return;
       }
       setFilesJson([]);
-
+      getApiFilesByUser();
       showInfo("No files found");
     }
   }
