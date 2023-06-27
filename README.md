@@ -15,6 +15,19 @@ Now, to use the backend, first run the following command:
 Afterward, run the command below to start the REST API:
 - npm start
 
+# Below are some images of the project, already connected with the backend.
+
+![imagem1CSV](https://github.com/joelcardev/CsvNow/assets/25753745/2d0011e2-e24b-4912-8651-c5dd1da18bfb)
+
+
+![IMAGEM3CSV](https://github.com/joelcardev/CsvNow/assets/25753745/35ed1169-3501-49b1-aa9f-d83488ded7bf)
+
+
+![IMAGEM2CSV](https://github.com/joelcardev/CsvNow/assets/25753745/b9e11354-73db-4822-8ba9-2c9fe55745df)
+
+
+
+
   
  
 
